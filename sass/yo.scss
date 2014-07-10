@@ -25,6 +25,10 @@ $colors: $pink $red $orange $orange-yellow $yellow-orange $yellow $yellow-green 
   }
 }
 
+.token a {
+  color: inherit;
+}
+
 .boring {
   font-size: 5em;
   line-height: 1em;

@@ -1,0 +1,7 @@
+<pre><code class="language-javascript">  app: function () {
+    this.mkdir('app');
+    this.mkdir('app/templates');
+
+    this.template('_package.json', 'package.json'); // was this.copy
+    this.template('_bower.json', 'bower.json');     // was this.copy
+  },</code></pre>

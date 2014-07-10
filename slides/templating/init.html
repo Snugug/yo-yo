@@ -1,0 +1,9 @@
+<pre><code class="language-javascript">  init: function () {
+    this.pkg = require('../package.json');
+
+    this.on('end', function () {
+      if (!this.options['skip-install']) {
+        this.installDependencies();
+      }
+    });
+  },</code></pre>

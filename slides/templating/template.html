@@ -1,0 +1,12 @@
+<pre><code class="language-javascript">  app: function () {
+    this.mkdir('app');
+    this.mkdir('app/templates');
+
+    this.copy('_package.json', 'package.json');
+    this.copy('_bower.json', 'bower.json');
+  },
+
+  projectfiles: function () {
+    this.copy('editorconfig', '.editorconfig');
+    this.copy('jshintrc', '.jshintrc');
+  }</code></pre>

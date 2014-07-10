@@ -1,0 +1,19 @@
+<pre><code class="language-javascript">  askFor: function () {
+    var done = this.async();
+
+    // Have Yeoman greet the user.
+    this.log(yosay('Welcome to the marvelous Awesomesauce generator!'));
+
+    var prompts = [{
+      type: 'confirm',
+      name: 'someOption',
+      message: 'Would you like to enable this option?',
+      default: true
+    }];
+
+    this.prompt(prompts, function (props) {
+      this.someOption = props.someOption;
+
+      done();
+    }.bind(this));
+  },</code></pre>

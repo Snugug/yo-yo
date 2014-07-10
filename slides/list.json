@@ -66,6 +66,114 @@
           "id": "generator-generating-generators"
       }
     }
-  ]
+  ],
+
+
+
+
+
+  {
+    "filename": "transitions/01.html",
+      "attr": {
+        "id": "hey-nanny-nanny"
+    }
+  },
+
+
+
+
+
+  [
+    {
+      "filename": "templating/intro.md",
+        "attr": {
+          "id": "app-index"
+      }
+    }
+    ,{
+      "filename": "templating/basic.html",
+        "attr": {
+          "id": "app-index-overview"
+      }
+    }
+    ,{
+      "filename": "templating/init.html",
+        "attr": {
+          "id": "app-index-init"
+      }
+    }
+    ,{
+      "filename": "templating/ask.html",
+        "attr": {
+          "id": "app-index-ask"
+      }
+    }
+    ,{
+      "filename": "templating/template.html",
+        "attr": {
+          "id": "app-index-ask"
+      }
+    }
+  ],
+
+
+
+
+  [
+    {
+      "filename": "extend/ask.html",
+        "attr": {
+          "id": "adding-prompts"
+      }
+    }
+    ,{
+      "filename": "extend/attach.html",
+        "attr": {
+          "id": "adding-prompt-values"
+      }
+    }
+    ,{
+      "filename": "extend/template.html",
+        "attr": {
+          "id": "copy-to-template"
+      }
+    }
+    ,{
+      "filename": "extend/file.html",
+        "attr": {
+          "id": "template-variables"
+      }
+    }
+    ,{
+      "filename": "extend/init.html",
+        "attr": {
+          "id": "initialization"
+      }
+    }
+    ,{
+      "filename": "extend/extend.html",
+        "attr": {
+          "id": "additions-in-action"
+      }
+    }
+  ],
+
+
+
+
+
+  {
+    "filename": "transitions/02.html",
+      "attr": {
+        "id": "hey-hey-nanny-nanny"
+    }
+  }
+
+
+
+
+
+
+
 
 ]

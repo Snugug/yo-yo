@@ -1,0 +1,18 @@
+<pre><code class="language-javascript">// Powered by https://www.npmjs.org/package/inquirer
+  askFor: function () {
+    // ...
+    prompts.unshift({
+      type: 'string',
+      name: 'projectName',
+      message: 'What\'s your project\'s name?' + chalk.red(' (Required)'),
+      validate: function (input) {
+        if (input === '') {
+          return 'Please enter your project\'s name';
+        }
+        else {
+          return true;
+        }
+      }
+    });
+    // ...
+  }</code></pre>
