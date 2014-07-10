@@ -81,6 +81,11 @@ $colors: $pink $red $orange $orange-yellow $yellow-orange $yellow $yellow-green 
     opacity: 1;
     background-image: url("http://snugug.github.io/images/happy-minions.gif");
   }
+
+  .beyonce & {
+    opacity: 1;
+    background-image: url("http://snugug.github.io/images/beyonce.gif");
+  }
 }
 
 @include keyframes(rainbow) {
