@@ -1,1 +1,65 @@
-["index.md"]
+[
+  "index.md",
+  {
+    "filename": "intro/slides.html",
+    "attr": {
+      "id": "slides-available"
+    }
+  },
+  {
+    "filename": "intro/check-it-out.html",
+    "attr": {
+      "id": "check-it-out"
+    }
+  },
+
+
+
+  [
+    {
+      "filename": "basic/yo.html",
+        "attr": {
+          "id": "allo-yeoman"
+      }
+    },
+    {
+      "filename": "basic/what-is-yeoman.html",
+        "attr": {
+          "id": "what-is-yeoman",
+          "data-state": "bounceInDown yeoman-home"
+      }
+    },
+    {
+      "filename": "basic/so-much-more.html",
+        "attr": {
+          "id": "so-much-more"
+      }
+    }
+  ],
+
+
+
+
+
+  [
+    {
+      "filename": "generator/yo-dawg.md",
+        "attr": {
+          "id": "yo-dawg"
+      }
+    },
+    {
+      "filename": "generator/i-heard-you-like-generators.html",
+        "attr": {
+          "id": "i-heard-you-like-generators"
+      }
+    },
+    {
+      "filename": "generator/generator.html",
+        "attr": {
+          "id": "generator-generating-generators"
+      }
+    }
+  ]
+
+]

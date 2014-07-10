@@ -1,0 +1,116 @@
+@import "compass";
+@import "letterform-shades";
+
+$pink: #f2006f;
+$red: #ff0f00;
+$orange: #ff6e00;
+$orange-yellow: #ffa100;
+$yellow-orange: #ffd400;
+$yellow: #f4fb00;
+$yellow-green: #8ee200;
+$green: #00cc24;
+$teal: #008fcc;
+$blue: #0043cc;
+$dark-blue: #3100cc;
+$purple: #a100cc;
+
+
+$colors: $pink $red $orange $orange-yellow $yellow-orange $yellow $yellow-green $green $teal $blue $dark-blue $purple $pink;
+
+.current-fragment {
+  .bounceInDown & {
+    @include animation-name(bounceInDown);
+    @include animation-duration(.75s);
+    @include animation-fill-mode(both);
+  }
+}
+
+.boring {
+  font-size: 5em;
+  line-height: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: red;
+  padding: .25em;
+  padding-bottom: .15em;
+  // border: .15em solid red;
+  border-radius: .25em;
+
+  box-shadow: .1em .1em 0 red inset, -.1em -.1em 0 red inset, .2em .2em 0 mix(black, red, 25%) inset, -.2em -.2em 0 mix(black, red, 25%) inset, 0 0 1em .5em rgba(red, .15), 0 0 1em .5em rgba(red, .15) inset;
+
+  text-shadow: .01em .01em mix(black, red, 25%), .02em .02em mix(black, red, 25%), .03em .03em mix(black, red, 25%), .04em .04em mix(black, red, 25%), .05em .05em mix(black, red, 25%);
+}
+
+.so-much-more {
+  font-size: 2.5em;
+  line-height: 1.25em;
+  @include animation(rainbow 15s linear infinite);
+
+  .line {
+    display: block;
+  }
+}
+
+// .bounceInDown {
+//   -webkit-animation-name: bounceInDown;
+//   animation-name: bounceInDown;
+//   -webkit-animation-duration: 1s;
+//   animation-duration: 1s;
+//   -webkit-animation-fill-mode: both;
+//   animation-fill-mode: both;
+// }
+
+
+.reveal .state-background {
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  @include transition(opacity .75s);
+
+
+  .yeoman-home & {
+    opacity: 1;
+    background-image: url("http://snugug.github.io/images/yeoman-homepage.jpg");
+  }
+}
+
+@include keyframes(rainbow) {
+  $length: length($colors);
+  $step: 100% / ($length - 1);
+
+  @for $i from 0 to length($colors) {
+    #{$step * $i} {
+      $clr: nth($colors, $i + 1);
+      color: $clr;
+      @include reverse-shade(rgba(mix(white, $clr, 50%), .15), rgba($clr, .015));
+    }
+  }
+}
+
+@include keyframes(bounceInDown) {
+    0%, 60%, 75%. 90%, 100% {
+        @include transition-timing-function(cubic-bezier(0.215, 0.610, 0.355, 1.000));
+    }
+
+    0% {
+        opacity: 0;
+        @include transform(translate3d(0, -300px, 200px));
+    }
+
+    60% {
+        opacity: 1;
+        @include transform(translate3d(0, 25px, 0));
+    }
+
+    75% {
+        @include transform(translate3d(0, -10px, 0));
+    }
+
+    90% {
+        @include transform(translate3d(0, 5px, 0));
+    }
+
+    100% {
+        @include transform(none);
+    }
+}
