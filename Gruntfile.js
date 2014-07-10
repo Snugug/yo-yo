@@ -7,7 +7,7 @@
           options: {
             livereload: true
           },
-          files: ['index.html', 'slides/*.md', 'slides/*.html', 'js/*.js', 'css/*.css']
+          files: ['index.html', 'slides/**/*.md', 'slides/**/*.html', 'js/*.js', 'css/*.css']
         },
         index: {
           files: ['templates/_index.html', 'templates/_section.html', 'slides/list.json'],

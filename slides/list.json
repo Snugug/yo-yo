@@ -55,6 +55,12 @@
       }
     },
     {
+      "filename": "generator/npm.html",
+        "attr": {
+          "id": "generator-generator"
+      }
+    },
+    {
       "filename": "generator/generator.html",
         "attr": {
           "id": "generator-generating-generators"
