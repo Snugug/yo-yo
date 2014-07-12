@@ -43,6 +43,14 @@ $colors: $pink $red $orange $orange-yellow $yellow-orange $yellow $yellow-green 
   box-shadow: .1em .1em 0 red inset, -.1em -.1em 0 red inset, .2em .2em 0 mix(black, red, 25%) inset, -.2em -.2em 0 mix(black, red, 25%) inset, 0 0 1em .5em rgba(red, .15), 0 0 1em .5em rgba(red, .15) inset;
 
   text-shadow: .01em .01em mix(black, red, 25%), .02em .02em mix(black, red, 25%), .03em .03em mix(black, red, 25%), .04em .04em mix(black, red, 25%), .05em .05em mix(black, red, 25%);
+
+  .subgenerator & {
+    position: relative;
+    margin-top: -40%;
+    // left: 15%;
+  }
+
+  // @include transform(translateX(-50%) translateY(-50%));
 }
 
 .so-much-more {

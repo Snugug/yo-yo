@@ -188,12 +188,68 @@
       "attr": {
         "id": "hey-hey-nanny-nanny"
     }
-  }
+  },
 
 
 
 
-
+  [
+    {
+      "filename": "subgenerator/intro.md",
+        "attr": {
+          "id": "subgenerators"
+      }
+    }
+    ,{
+      "filename": "subgenerator/subgenerator.html",
+        "attr": {
+          "id": "subgenerator-subgeneration"
+      }
+    }
+    ,{
+      "filename": "subgenerator/all.html",
+        "attr": {
+          "id": "subgenerator-index",
+          "data-state": "bounceInDown subgenerator"
+      }
+    }
+    ,{
+      "filename": "subgenerator/so-much-more.html",
+        "attr": {
+          "id": "subgenerator-so-much-more"
+      }
+    }
+    ,{
+      "filename": "subgenerator/repeating.html",
+        "attr": {
+          "id": "ask-repeating-questions"
+      }
+    }
+    ,{
+      "filename": "subgenerator/questions.html",
+        "attr": {
+          "id": "work-with-repeating-questions"
+      }
+    }
+    ,{
+      "filename": "subgenerator/kickoff.html",
+        "attr": {
+          "id": "setting-repeating-questions-in-motion"
+      }
+    }
+    ,{
+      "filename": "subgenerator/subgenerator-action.html",
+        "attr": {
+          "id": "subgenerator-in-action"
+      }
+    }
+    ,{
+      "filename": "subgenerator/subgenerator-advanced.html",
+        "attr": {
+          "id": "subgenerator-awesome-advanced"
+      }
+    }
+  ]
 
 
 

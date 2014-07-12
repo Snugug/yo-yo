@@ -1,0 +1,16 @@
+<pre><code class="language-javascript">    var addSize = function () {
+      _this.prompt(sizePrompts, function (props) {
+        if (props.sizeAdd) {
+          sizes.push({
+            "name": props.sizeName,
+            "size": props.sizeSize
+          });
+          console.log(line);
+          addSize();
+        }
+        else {
+          this.flavorSizes = sizes;
+          done();
+        }
+      }.bind(_this));
+    }</code></pre>
