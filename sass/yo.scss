@@ -94,6 +94,23 @@ $colors: $pink $red $orange $orange-yellow $yellow-orange $yellow $yellow-green 
     opacity: 1;
     background-image: url("http://snugug.github.io/images/beyonce.gif");
   }
+
+  .kermit & {
+    opacity: 1;
+    background-image: url("http://snugug.github.io/images/kermit-yaaay.gif");
+  }
+
+  .bye & {
+    opacity: 1;
+    background-image: url("http://snugug.github.io/images/out.gif");
+  }
+}
+
+.out {
+  &--resources {
+    margin-top: 2rem;
+    font-size: .75em;
+  }
 }
 
 @include keyframes(rainbow) {

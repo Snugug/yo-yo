@@ -249,8 +249,51 @@
           "id": "subgenerator-awesome-advanced"
       }
     }
+  ],
+
+
+
+
+  {
+    "filename": "transitions/background.html",
+      "attr": {
+        "id": "yaaaay",
+        "data-state": "kermit"
+    }
+  },
+
+
+
+
+
+  {
+    "filename": "transitions/03.html",
+      "attr": {
+        "id": "hey-hey-hey-nanny-nanny"
+    }
+  }
+
+  ,{
+    "filename": "north/north.html",
+      "attr": {
+        "id": "north"
+    }
+  },
+
+  [
+    {
+      "filename": "transitions/background.html",
+        "attr": {
+          "id": "bye",
+          "data-state": "bye"
+      }
+    }
+    ,{
+      "filename": "out/resources.html",
+        "attr": {
+          "id": "outtie"
+      }
+    }
   ]
-
-
 
 ]
