@@ -108,27 +108,44 @@
       }
     }
     ,{
+      "filename": "templating/steps.html",
+        "attr": {
+          "id": "app-priorities"
+      }
+    }
+    ,{
       "filename": "templating/init.html",
         "attr": {
-          "id": "app-index-init"
+          "id": "app-index-initializing"
       }
     }
     ,{
       "filename": "templating/ask.html",
         "attr": {
-          "id": "app-index-ask"
+          "id": "app-index-prompting"
       }
     }
     ,{
       "filename": "templating/template.html",
         "attr": {
-          "id": "app-index-ask"
+          "id": "app-index-writing"
+      }
+    }
+    ,{
+      "filename": "templating/end.html",
+        "attr": {
+          "id": "app-index-end"
       }
     }
   ],
 
-
-
+  {
+    "filename": "transitions/background.html",
+      "attr": {
+        "id": "twist",
+        "data-state": "twist"
+    }
+  },
 
   [
     {
@@ -144,6 +161,12 @@
       }
     }
     ,{
+      "filename": "extend/config.html",
+        "attr": {
+          "id": "configuring-root"
+      }
+    }
+    ,{
       "filename": "extend/template.html",
         "attr": {
           "id": "copy-to-template"
@@ -156,9 +179,9 @@
       }
     }
     ,{
-      "filename": "extend/init.html",
+      "filename": "extend/install.html",
         "attr": {
-          "id": "initialization"
+          "id": "installing"
       }
     }
     ,{
@@ -220,15 +243,27 @@
       }
     }
     ,{
-      "filename": "subgenerator/repeating.html",
+      "filename": "subgenerator/repeating-1.html",
         "attr": {
           "id": "ask-repeating-questions"
+      }
+    }
+    ,{
+      "filename": "subgenerator/repeating-2.html",
+        "attr": {
+          "id": "ask-repeating-questions-2"
       }
     }
     ,{
       "filename": "subgenerator/questions.html",
         "attr": {
           "id": "work-with-repeating-questions"
+      }
+    }
+    ,{
+      "filename": "subgenerator/dynamic-prompts.html",
+        "attr": {
+          "id": "dynamic-prompts"
       }
     }
     ,{
@@ -241,12 +276,6 @@
       "filename": "subgenerator/subgenerator-action.html",
         "attr": {
           "id": "subgenerator-in-action"
-      }
-    }
-    ,{
-      "filename": "subgenerator/subgenerator-advanced.html",
-        "attr": {
-          "id": "subgenerator-awesome-advanced"
       }
     }
   ],
@@ -273,14 +302,99 @@
     }
   }
 
-  ,{
-    "filename": "north/north.html",
-      "attr": {
-        "id": "north"
+  ,[
+    {
+      "filename": "composability/intro.md",
+        "attr": {
+          "id": "composability"
+      }
     }
-  },
+    ,{
+      "filename": "composability/voltron.md",
+        "attr": {
+          "id": "composability-voltron",
+          "data-state": "voltron"
+      }
+    }
+    ,{
+      "filename": "composability/app-default.html",
+        "attr": {
+          "id": "compose-in-app"
+      }
+    }
+    ,{
+      "filename": "composability/sass.html",
+        "attr": {
+          "id": "composable-subgenerator"
+      }
+    }
+    ,{
+      "filename": "composability/sass-prompting.html",
+        "attr": {
+          "id": "composability-subgenerator-prompts"
+      }
+    }
+    ,{
+      "filename": "composability/sass-default.html",
+        "attr": {
+          "id": "composability-subgenerator-compose"
+      }
+    }
+    ,{
+      "filename": "composability/smacss-structure-1.html",
+        "attr": {
+          "id": "smacss-structure-1"
+      }
+    }
+    ,{
+      "filename": "composability/smacss-structure-2.html",
+        "attr": {
+          "id": "smacss-structure-2"
+      }
+    }
+    ,{
+      "filename": "composability/smacss-compass-1.html",
+        "attr": {
+          "id": "smacss-compass-1"
+      }
+    }
+    ,{
+      "filename": "composability/smacss-compass-2.html",
+        "attr": {
+          "id": "smacss-compass-2"
+      }
+    }
+    ,{
+      "filename": "composability/turtles.html",
+        "attr": {
+          "id": "composability-all-the-way-down",
+          "data-state": "michelangelo"
+      }
+    }
+    ,{
+      "filename": "composability/smacss.html",
+        "attr": {
+          "id": "smacss-generator-in-action"
+      }
+    }
+  ]
 
-  [
+  ,{
+      "filename": "transitions/background.html",
+        "attr": {
+          "id": "all-together",
+          "data-state": "spaceship"
+      }
+    }
+
+    ,{
+      "filename": "out/shake.html",
+        "attr": {
+          "id": "shake-it-together"
+      }
+    }
+
+  ,[
     {
       "filename": "transitions/background.html",
         "attr": {

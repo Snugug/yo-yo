@@ -1,16 +1,15 @@
-<pre><code class="language-javascript">    var addSize = function () {
-      _this.prompt(sizePrompts, function (props) {
-        if (props.sizeAdd) {
-          sizes.push({
-            "name": props.sizeName,
-            "size": props.sizeSize
-          });
-          console.log(line);
-          addSize();
+<pre><code class="language-javascript">    var addElement = function () {
+      _this.prompt(elementPrompts, function (props) {
+        if (props.elementAdd) {
+          elements.push(props.element);
+          this.log(line);
+          addElement();
         }
         else {
-          this.flavorSizes = sizes;
-          done();
+          this.elements = elements;
+          // Going to dynamically add prompts for our Modifer here
+          this.log(separator);
+          addModifier();
         }
       }.bind(_this));
     }</code></pre>

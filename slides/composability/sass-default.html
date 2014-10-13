@@ -1,0 +1,23 @@
+<pre class="small"><code class="language-javascript">  default: function () {
+    if (this.partials === 'atomic') {
+      this.composeWith('style-prototype:atomic', {
+        options: {
+          'skip-install': this.options['skip-install']
+        }
+      });
+    }
+    else if (this.partials === 'north') {
+      this.composeWith('north:sass', {
+        options: {
+          'skip-install': this.options['skip-install']
+        }
+      });
+    }
+    else if (this.partials === 'smacss') {
+      this.composeWith('awesomesauce:smacss', {
+        options: {
+          'skip-install': this.options['skip-install']
+        }
+      });
+    }
+  }</code></pre>

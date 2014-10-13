@@ -1,0 +1,20 @@
+<pre class="small"><code class="language-javascript">      {
+        type: 'string',
+        name: 'element',
+        message: 'Element Name',
+        when: function (answers) {
+          return  answers.elementAdd;
+        },
+        validate: function (answer) {
+          if (answer === '') {
+            return 'You need to name your element!';
+          }
+          else if (elements.indexOf(answer) > -1) {
+            return 'Element ' + chalk.yellow(answer) + ' already exists!';
+          }
+          else {
+            return true;
+          }
+        }
+      }
+    ];</code></pre>

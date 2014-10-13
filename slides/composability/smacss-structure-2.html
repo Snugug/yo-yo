@@ -1,0 +1,16 @@
+<pre class="small"><code class="language-javascript">      folders = [
+        'layout',
+        'module'
+      ];
+
+      this.composeWith('sass:structure', {
+        options: {
+          syntax: 'scss',
+          base: base,
+          files: files,
+          partials: partials,
+          folders: folders,
+          fileTemplate: this.sourceRoot() + '/_style.scss'
+        }
+      });
+    },</code></pre>

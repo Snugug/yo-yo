@@ -1,12 +1,14 @@
 <pre><code class="language-javascript">// npm install underscore.string --save
 var _s = require('underscore.string');
 // ...
-  askFor: function () {
+  prompting: function () {
     // ...
     this.prompt(prompts, function (props) {
-      // ...
+      this.someOption = props.someOption;
+      // Working with the Project Name
       this.projectName = props.projectName;
       this.projectSlug = _s.slugify(props.projectName);
-      // ...
+
+      done();
     }.bind(this));
   }</code></pre>

@@ -1,7 +1,8 @@
-<pre><code class="language-javascript">  app: function () {
-    this.mkdir('app');
-    this.mkdir('app/templates');
-
-    this.template('_package.json', 'package.json'); // was this.copy
-    this.template('_bower.json', 'bower.json');     // was this.copy
+<pre><code class="language-javascript">  writing: {
+    app: function () {
+      // ...
+      // Was `this.src.copy`
+      this.template('_package.json', 'package.json');
+      this.template('_bower.json', 'bower.json');
+    },
   },</code></pre>

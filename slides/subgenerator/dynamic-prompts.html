@@ -1,0 +1,17 @@
+<pre><code class="language-javascript">          // ...
+          // Dynamic prompts!
+          toModify = toModify.concat(elements);
+
+          //////////////////////////////
+          // Adds choices
+          //////////////////////////////
+          modifierPrompts.push({
+            type: 'checkbox',
+            name: 'toModify',
+            message: 'Items to modify',
+            choices: toModify,
+            when: function (answers) {
+              return answers.modifierAdd;
+            }
+          });
+          // ...</code></pre>

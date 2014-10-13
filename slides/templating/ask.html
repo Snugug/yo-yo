@@ -1,8 +1,10 @@
-<pre><code class="language-javascript">  askFor: function () {
+<pre class="small"><code class="language-javascript">  prompting: function () {
     var done = this.async();
 
     // Have Yeoman greet the user.
-    this.log(yosay('Welcome to the marvelous Awesomesauce generator!'));
+    this.log(yosay(
+      'Welcome to the neat Awesomesauce generator!'
+    ));
 
     var prompts = [{
       type: 'confirm',

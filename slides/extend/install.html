@@ -1,0 +1,10 @@
+<pre><code class="language-javascript">  install: function () {
+    if (!this.options['skip-install']) {
+      this.installDependencies();
+    }
+  },
+
+  end: function () {
+    this.log('\n  Contents of ' + chalk.cyan('package.json'));
+    sh.run('cat package.json');
+  }</code></pre>

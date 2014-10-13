@@ -1,6 +1,11 @@
-<pre><code class="language-javascript">    this.prompt(name, function (props) {
-      this.flavorName = _s.titleize(props.flavorName);
-      this.flavorSlug = _s.slugify(props.flavorName);
+<pre><code class="language-javascript">    this.prompt(blockPrompts, function (props) {
+      this.block = props.block;
+      this.blockName = _s.titleize(props.block);
+      this.blockSlug = _s.slugify(props.block);
 
-      addSize();
+      // Add block to list modifiable things
+      toModify.push(props.block);
+
+      this.log(separator);
+      addElement();
     }.bind(this));</code></pre>

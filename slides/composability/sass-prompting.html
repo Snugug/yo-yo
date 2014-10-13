@@ -1,0 +1,16 @@
+<pre><code class="language-javascript">  prompting: function () {
+    var done = this.async();
+
+    var partialPrompts = [{
+      type: 'list',
+      name: 'partials',
+      message: 'What Sass partial structure would you like to use?',
+      choices: ['Atomic', 'North', 'SMACSS']
+    }];
+
+    this.prompt(partialPrompts, function (props) {
+      this.partials = props.partials.toLowerCase();
+
+      done();
+    }.bind(this));
+  },</code></pre>
